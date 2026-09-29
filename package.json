@@ -1,0 +1,16 @@
+{
+  "name": "cotacao-dolar",
+  "version": "1.0.0",
+  "description": "Cotação do Dólar (USD/BRL) com Node.js e Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "ISC"
+}

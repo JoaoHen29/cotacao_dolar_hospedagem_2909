@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Requisito: atualizar a página a cada 10 segundos usando HTML -->
+  <meta http-equiv="refresh" content="10">
+
+  <title>Cotação do Dólar (USD/BRL)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="cabecalho">
+      <span class="moeda-tag">USD → BRL</span>
+      <h1>Cotação do Dólar</h1>
+      <p class="subtitulo">Dados em tempo real da AwesomeAPI</p>
+    </header>
+
+    <section class="card card-principal">
+      <p class="rotulo">Valor atual</p>
+      <p class="valor-atual" id="valor-atual">Carregando...</p>
+      <p class="variacao" id="variacao"></p>
+    </section>
+
+    <section class="cards-secundarios">
+      <div class="card card-alta">
+        <p class="rotulo">▲ Maior valor do dia</p>
+        <p class="valor" id="valor-alta">--</p>
+      </div>
+      <div class="card card-baixa">
+        <p class="rotulo">▼ Menor valor do dia</p>
+        <p class="valor" id="valor-baixa">--</p>
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <p id="ultima-atualizacao">Buscando cotação...</p>
+      <p class="aviso">A página é recarregada automaticamente a cada 10 segundos.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  text-align: center;
+}
+
+.moeda-tag {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: rgba(46, 204, 113, 0.18);
+  color: #2ecc71;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.cabecalho h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.subtitulo {
+  color: #b0c4cf;
+  margin-top: 4px;
+}
+
+/* Cards */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 22px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.rotulo {
+  font-size: 0.9rem;
+  color: #b0c4cf;
+  margin-bottom: 8px;
+}
+
+.card-principal {
+  text-align: center;
+  padding: 32px 22px;
+}
+
+.valor-atual {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.variacao {
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.variacao.positiva { color: #2ecc71; }
+.variacao.negativa { color: #e74c3c; }
+
+.cards-secundarios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.valor {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.card-alta { border-top: 4px solid #2ecc71; }
+.card-alta .rotulo { color: #2ecc71; }
+
+.card-baixa { border-top: 4px solid #e74c3c; }
+.card-baixa .rotulo { color: #e74c3c; }
+
+/* Rodapé */
+.rodape {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #b0c4cf;
+}
+
+.aviso {
+  margin-top: 4px;
+  opacity: 0.7;
+}
+
+.erro {
+  color: #e74c3c;
+  font-size: 1.2rem;
+}
+
+/* Celular */
+@media (max-width: 480px) {
+  .valor-atual { font-size: 2.4rem; }
+  .cards-secundarios { grid-template-columns: 1fr; }
+}
